@@ -2,12 +2,35 @@
 <html>
 <head>
 	<title>Mercedes Tutorial WEB Project</title>
-	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+
+	<!-- the jQuery Library -->
+	<script src="js/jquery-1.7.1.min.js" ></script>
+	
+
 </head>
-<body id="p1">
-	<a id="p1_img1" href="page_2.html"><img src="images/page_1/logo.png"></a>
-	<span id="p1_text1">Mercedes-Benz  |  A-Class</span>
+<body>
+	<div id="p1" > 
+		<a id="p1_img1" href="page_2.html"><img src="images/page_1/logo.png"></a>
+
+		<span id="p1_text1">Mercedes-Benz  |  A-Class</span>
+	</div>
 
 
+	<script type="text/javascript" >
+	
+			$("#p1").click(function () {
+				$('#p1').animate({
+				    opacity: 0.25,
+				    left: '+=50',
+				    height: 'toggle'
+				  }, 1000, function() {
+				    // Animation complete.
+				    
+				 });
+      			
+			});
+
+	</script>
 </body>
 </html>

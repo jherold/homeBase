@@ -93,8 +93,10 @@ input, select {
 	PAGE 1
 */
 
-body#p1 {
-	background: url(images/page_1/background_01.png) no-repeat;
+div#p1 {
+    min-width:1024px;
+    min-height: 768px;
+	background: url(../images/page_1/background_01.png) no-repeat;
 }
 a#p1_img1 { 
 	position: absolute; 
@@ -113,8 +115,10 @@ span#p1_text1 {
 /* 
 	PAGE 2
 */
-body#p2 {
-	background: url(images/page_2/background_02.png) no-repeat;
+div#p2 {
+    min-width:1024px;
+    min-height: 768px;
+    background: url(../images/page_2/background_02.png) no-repeat; 
 }
 span#p2_text1 { 
 	position: absolute; 
